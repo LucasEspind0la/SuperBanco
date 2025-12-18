@@ -33,8 +33,3 @@ Um sistema bancário básico desenvolvido em **Java**, com interface gráfica in
 - [JDK 17+](https://adoptium.net/) instalado
 - (Opcional) IDE como IntelliJ IDEA, Eclipse ou VS Code + Java Extension Pack
 
-### Passo a passo
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/LucasEspind0la/CadastroDeClientes.git
-   cd CadastroDeClientes
