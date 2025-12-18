@@ -23,7 +23,7 @@ Um sistema bancário básico desenvolvido em **Java**, com interface gráfica in
 
 | Tela Principal — Cadastro & Tabela |
 |:--:|
-| ![SuperBanco - Tela Principal](prints/tela-principal.png) |
+| ![SuperBanco - Tela Principal][(prints/tela-principal.png)](https://github.com/LucasEspind0la/SuperBanco/blob/main/prints/SuperBanco%20img.png?raw=true). |
 
 ---
 
