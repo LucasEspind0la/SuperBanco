@@ -27,10 +27,6 @@ Um sistema bancário básico desenvolvido em **Java**, com interface gráfica in
 |:--:|
 | ![SuperBanco - Tela Principal](prints/tela-principal.png) |
 
-> ✅ **Dica**: Adicione essa imagem ao seu repositório!  
-> → Crie uma pasta chamada `prints/` e salve o screenshot como `tela-principal.png`.  
-> Quer ajuda pra tirar ou editar o print? É só pedir! 📸
-
 ---
 
 ## 🚀 Como Executar
