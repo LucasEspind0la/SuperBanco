@@ -6,8 +6,6 @@
 
 Um sistema bancário básico desenvolvido em **Java**, com interface gráfica intuitiva para **cadastrar, visualizar e buscar clientes**. Ideal para estudo de **Programação Orientada a Objetos (POO)**, **persistência em memória** e **desenvolvimento de interfaces com Swing**.
 
-> 💡 Projeto criado com foco em aprendizado — perfeito para iniciantes que querem praticar Java de forma estruturada!
-
 ---
 
 ## 🌟 Funcionalidades
