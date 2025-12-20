@@ -1,45 +1,94 @@
-<!-- Banner com gradiente -->
+<!-- 
+  ██████╗ ██╗   ██╗███████╗██╗     ██╗ ██████╗ ███╗   ██╗
+  ██╔══██╗██║   ██║██╔════╝██║     ██║██╔═══██╗████╗  ██║
+  ██████╔╝██║   ██║█████╗  ██║     ██║██║   ██║██╔██╗ ██║
+  ██╔══██╗██║   ██║██╔══╝  ██║     ██║██║   ██║██║╚██╗██║
+  ██████╔╝╚██████╔╝███████╗███████╗██║╚██████╔╝██║ ╚████║
+  ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+-->
+
 <div align="center">
-  <img src="https://github.com/LucasEspind0la/SuperBanco/raw/main/prints/SuperBanco.png" alt="SuperBanco - Tela Principal" width="600"/>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/Swing-316796?style=for-the-badge&logo=java&logoColor=white" alt="Swing"/>
+  <img src="https://img.shields.io/badge/GUI-Blue?style=for-the-badge&logo=windows&logoColor=white" alt="GUI"/>
 </div>
 
-# 🏦 SuperBanco — Sistema de Gestão de Clientes Bancários
+<br/>
 
-[![Java](https://img.shields.io/badge/Java-17+-ED8B00?logo=java&logoColor=white)](https://www.oracle.com/java/)
-[![Swing](https://img.shields.io/badge/GUI-Swing-007ACC?logo=java&logoColor=white)](https://docs.oracle.com/javase/tutorial/uiswing/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/LucasEspind0la/SuperBanco?style=social)](https://github.com/LucasEspind0la/SuperBanco)
+# 🏦 Super Banco — Sistema de Gestão de Clientes
 
-> 💡 Um sistema bancário básico desenvolvido em **Java**, com interface gráfica intuitiva para **cadastrar, visualizar e buscar clientes**. Ideal para estudo de **Programação Orientada a Objetos (POO)**, **persistência em memória** e **desenvolvimento de interfaces com Swing**.
+> Um sistema bancário desktop em Java com interface gráfica intuitiva, validações robustas e gerenciamento completo de clientes. Desenvolvido para demonstrar boas práticas de programação orientada a objetos, tratamento de erros e experiência do usuário.
 
 ---
 
-## 🌟 Funcionalidades
+## 🎯 Visão Geral
 
-| Recurso | Descrição |
-|---------|-----------|
-| ✅ Cadastro de Clientes | Validação de CPF (11 dígitos) e dados completos (nome, telefone, endereço, saldo) |
-| ✅ Visualização em Tabela | Exibe todos os clientes em uma `JTable` com colunas organizadas |
-| ✅ Busca por CPF | Encontra rapidamente um cliente digitando o CPF |
-| ✅ Interface Moderna | Cores, ícones e layout responsivo criados com Swing |
-| ✅ Dados em Memória | Armazena clientes em uma lista (`ArrayList<Cliente>`) |
+O **Super Banco** é uma aplicação desktop que permite o cadastro, consulta, edição e exclusão de clientes, com foco em:
 
----
+✅ Validação de CPF único  
+✅ Confirmação de exclusão com alerta visual  
+✅ Edição segura de dados  
+✅ Busca por CPF com retorno detalhado  
+✅ Interface limpa e responsiva
 
-## 🖼️ Demonstração
-
-| Tela Principal — Cadastro & Tabela |
-|:--:|
-| ![SuperBanco - Tela Principal](https://github.com/LucasEspind0la/SuperBanco/raw/main/prints/SuperBanco.png) |
-
-> 🔍 *Clique na imagem para ver em tamanho maior*  
-> ✅ A interface é totalmente interativa — cadastre, busque e visualize clientes em tempo real!
+Ideal para projetos acadêmicos, portfólio pessoal ou demonstração de habilidades em Java Swing e lógica de negócios.
 
 ---
 
-## 🚀 Como Executar
+## 🖥️ Funcionalidades Principais
 
-### Pré-requisitos
+### 1. ✅ Cadastro de Cliente
+- Campos: Nome completo, CPF (11 dígitos), Telefone, Data de Nascimento, Endereço e Saldo Inicial.
+- **Validação automática de CPF duplicado** — impede cadastros repetidos.
+- Botão verde “Cadastrar Cliente” com feedback visual de sucesso.
 
-- [JDK 17+](https://adoptium.net/) instalado
-- (Opcional) IDE como IntelliJ IDEA, Eclipse ou VS Code + Java Extension Pack
+### 2. 🔍 Busca por CPF
+- Campo de busca para localizar cliente rapidamente.
+- Ao encontrar, exibe todas as informações em uma janela modal com ícone informativo.
+- Mostra nome, CPF, telefone, data de nascimento, endereço e saldo atual.
+
+### 3. 📝 Edição de Cliente
+- Selecionando um cliente na tabela, clique em “Editar Cliente”.
+- Os dados são carregados nos campos para modificação.
+- Botão “Salvar Alterações” atualiza os dados automaticamente na lista.
+
+### 4. ❌ Remoção Segura de Cliente
+- Clique em “Remover Cliente” para excluir o registro selecionado.
+- **Confirmação com janela de alerta** — previne exclusões acidentais.
+- Mensagem clara com CPF do cliente a ser removido.
+
+### 5. 📊 Visualização em Tabela
+- Lista todos os clientes cadastrados em uma tabela organizada:
+  - Nome
+  - CPF
+  - Telefone
+  - Saldo (formatado como R$)
+- Linhas destacadas ao selecionar um cliente.
+
+---
+
+## 🎨 Screenshots
+
+| Cadastro de Cliente | Edição de Cliente |
+|---------------------|-------------------|
+| ![Cadastro](impressoes/Tela%20inicial.png) | ![Edição](impressoes/Tela%20de%20Atualização%20de%20Cadastro.png) |
+
+| Confirmação de Exclusão | Informações do Cliente |
+|--------------------------|------------------------|
+| ![Exclusão](impressoes/Tela%20de%20Remoção%20de%20Cliente.png) | ![Info](impressoes/Busca%20de%20dados%20dos%20Clientes.png) |
+
+> 💡 *Os links acima apontam diretamente para as imagens na pasta `impressoes/` do seu repositório — funcionam no GitHub sem problemas.*
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem**: Java 17+
+- **Interface Gráfica**: Java Swing (JFrame, JTable, JOptionPane, JTextField, etc.)
+- **Gerenciamento de Dados**: Listas dinâmicas (`ArrayList`) — sem banco de dados externo (ideal para demonstração)
+- **Validações**: Regras de negócio implementadas com métodos customizados
+- **Design**: Layout limpo, botões coloridos e mensagens de alerta visuais
+
+---
+
+## 📁 Estrutura do Projeto
