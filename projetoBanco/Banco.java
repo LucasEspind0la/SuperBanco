@@ -10,10 +10,18 @@ public class Banco {
         if (buscarPorCpf(cliente.getCpf()) != null) {
             System.out.println("⚠️ ERRO! CPF já cadastrado!");
             System.out.println("⚠️ Verifique se digitou corretamente.");
+            
             return;
         }
         clientes.add(cliente);
         System.out.println("\n✅ Cliente cadastrado com sucesso!\n");
+    }
+    public boolean removerClientePorCpf(String cpf) {
+        return clientes.removeIf(c -> c.getCpf().equals(cpf));
+    }
+
+    public java.util.List<Cliente> getClientes() {
+        return new java.util.ArrayList<>(clientes); // cópia segura
     }
 
     public void listarClientes() {
@@ -26,6 +34,7 @@ public class Banco {
             System.out.println(c);
             System.out.println("------------------------------\n");
         }
+        
     }
 
     public Cliente buscarPorCpf(String cpf) {

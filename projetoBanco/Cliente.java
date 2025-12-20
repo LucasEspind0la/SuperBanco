@@ -46,4 +46,13 @@ public class Cliente {
                "🏠 Endereço: " + endereco + "\n" +
                "💰 Saldo Atual: R$ " + String.format("%.2f", saldo) + "\n";
     }
+
+	public void setNome(String nome2) {
+
+	}
+
+	public void setCpf(String cpfDigitado) {
+		// TODO Auto-generated method stub
+		
+	}
 }
