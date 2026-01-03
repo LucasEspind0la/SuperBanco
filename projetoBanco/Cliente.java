@@ -52,7 +52,6 @@ public class Cliente {
 	}
 
 	public void setCpf(String cpfDigitado) {
-		// TODO Auto-generated method stub
 		
 	}
 }
