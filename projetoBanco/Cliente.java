@@ -53,6 +53,5 @@ public class Cliente {
 
 	public void setCpf(String cpfDigitado) {
 
-		
 	}
 }
